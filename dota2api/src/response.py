@@ -11,7 +11,7 @@ class Dota2Dict(dict):
     pass
 
 
-def build(req, url, raw_mode):
+def build(req, url, raw_mode=False):
     req_resp = req.json()
     if 'result' in req_resp:
         if 'error' in req_resp['result']:
